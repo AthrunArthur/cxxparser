@@ -14,6 +14,14 @@
 %{
 #include <CxxLexing.hxx>
 using namespace std;
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int yylex();
+#ifdef __cplusplus
+}
+#endif
 %}
 %a 5000
 %e 1500
